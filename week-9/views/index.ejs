@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 800px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #f5f5f5;
+      }
+      .container {
+        background-color: white;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        text-align: center;
+      }
+      h1 {
+        color: #333;
+      }
+      .link-button {
+        display: inline-block;
+        margin: 10px;
+        padding: 12px 30px;
+        background-color: #4CAF50;
+        color: white;
+        text-decoration: none;
+        border-radius: 4px;
+        font-size: 16px;
+      }
+      .link-button:hover {
+        background-color: #45a049;
+      }
+      .link-button.secondary {
+        background-color: #2196F3;
+      }
+      .link-button.secondary:hover {
+        background-color: #1976D2;
+      }
+      .link-button.tertiary {
+        background-color: #FF9800;
+      }
+      .link-button.tertiary:hover {
+        background-color: #F57C00;
+      }
+      .method-section {
+        margin: 30px 0;
+        padding: 20px;
+        border-radius: 8px;
+        background-color: #f9f9f9;
+      }
+      .method-title {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 15px;
+        color: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1><%= title %></h1>
+      <p>Welcome to <%= title %></p>
+      
+      <div class="method-section">
+        <div class="method-title">SQLite3 (Manual Queries)</div>
+        <div>
+          <a href="/register" class="link-button">Register New User</a>
+          <a href="/users" class="link-button secondary">View All Users</a>
+        </div>
+      </div>
+      
+      <div class="method-section">
+        <div class="method-title">Prisma ORM</div>
+        <div>
+          <a href="/register-prisma" class="link-button tertiary">Register New User (Prisma)</a>
+          <a href="/users-prisma" class="link-button secondary">View All Users (Prisma)</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
